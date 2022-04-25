@@ -77,8 +77,8 @@
   --bs-body-font-size: 0.8rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.7;
-  --bs-body-color: #60697b;
-  --bs-body-bg: #fefefe;
+  --bs-body-color: #a9b0c0;
+  --bs-body-bg: #202124;
 }
 *,
 ::after,
@@ -4735,9 +4735,9 @@ textarea.form-control.is-invalid {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #202124;
   background-clip: border-box;
-  border: 1px solid rgba(164, 174, 198, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.17);
   border-radius: 0.4rem;
 }
 .card > hr {
@@ -19966,7 +19966,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 700;
-  color: #343f52;
+  color: #dff1fc;
   word-spacing: 0.1rem;
   letter-spacing: -0.01rem;
 }
@@ -20912,7 +20912,7 @@ figure img {
   color: #efeff0 !important;
 }
 .bg-soft-primary {
-  background-color: #f1f5fd !important;
+  background-color: #000 !important;
 }
 .text-soft-primary {
   color: #f1f5fd !important;
@@ -28324,7 +28324,7 @@ header {
 .banner--stick.transparent,
 .banner--stick:not(.navbar-dark) {
   box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
-  background: rgba(255, 255, 255, 0.97);
+  background: #000;
 }
 .banner--stick.transparent.navbar-dark .nav-link,
 .banner--stick:not(.navbar-dark).navbar-dark .nav-link {
@@ -28481,7 +28481,7 @@ button.hamburger:before {
   height: 3px;
   margin: 0 0 5px;
   transition: all 0.2s ease-in-out;
-  background: #343f52;
+  background: #fff;
 }
 @media (prefers-reduced-motion: reduce) {
   button.hamburger span,
@@ -28516,7 +28516,6 @@ button.hamburger.animate.active:after {
 .card {
   box-shadow: 0 0 0 0.05rem rgba(8, 60, 130, 0.06),
     0 0 1.25rem rgba(30, 34, 40, 0.04);
-  border: 0;
 }
 .card[class*="bg-"] {
   box-shadow: none !important;
@@ -29616,10 +29615,10 @@ button.hamburger.animate.active:after {
   right: 0.5rem;
 }
 [class*="offcanvas-"] .btn-close {
-  color: rgba(30, 34, 40, 0.8);
+  color: #999;
 }
 [class*="offcanvas-"] .btn-close:hover {
-  color: #1e2228;
+  color: #fff;
 }
 .modal.fade.modal-bottom-center .modal-dialog {
   position: absolute;
@@ -35913,6 +35912,7 @@ footer.bg-dark.angled.upper-start:before {
   }
   .logomobile {
     display: block;
+    color: #fff;
   }
   .login-web{
     display: none;
@@ -35922,7 +35922,7 @@ footer.bg-dark.angled.upper-start:before {
     position: fixed;
     bottom: 0;
     font-weight: 500;
-    background-color: #1e2228;
+    background-color: #000;
     color: #fff !important;
     align-content: center;
     width: 100%;
@@ -36044,7 +36044,12 @@ footer.bg-dark.angled.upper-start:before {
 [class*=offcanvas-].text-inverse a:not(.btn):not([class*=link-]):hover,
 a,
 a:hover {
-    color: #f4b55d
+  background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
+  background-size: 150%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 1px rgba(255, 200, 0, .3));
+  animation: MoveBackgroundPosition 6s ease-in-out infinite;
 }
 
 .icon-list.bullet-bg i.bullet-white,
@@ -36377,7 +36382,7 @@ form.dark-fields .form-control:focus {
 }
 
 .bg-soft-primary {
-    background-color: #fff8ef !important
+    background-color: #000 !important
 }
 
 .text-soft-primary {
@@ -36385,7 +36390,7 @@ form.dark-fields .form-control:focus {
 }
 
 .bg-gradient-primary {
-    background: linear-gradient(180deg, #fff8ef, rgba(255, 255, 255, 0) 100%) !important
+    background: linear-gradient(180deg, #000, rgba(255, 255, 255, 0) 100%) !important
 }
 
 .bg-gradient-reverse-primary {
